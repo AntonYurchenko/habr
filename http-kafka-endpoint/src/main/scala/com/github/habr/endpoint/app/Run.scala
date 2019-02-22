@@ -8,6 +8,11 @@ import io.vertx.scala.core.Vertx
 
 /**
   * The object is entry point of the application.
+  * The application is example of http REST service based on Vert.x framework for sending POST requests to kafka topic.
+  * Each logical part of the service is vert.x vertical which can be easy parallelized by changing of configuration.
+  *
+  * @see https://vertx.io
+  * @author Anton Yurchenko
   */
 object Run extends App with LazyLogging {
 
