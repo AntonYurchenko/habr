@@ -1,4 +1,4 @@
-# Http endpoint for kafka topic on base vert.x
+# Scala http endpoint for kafka topic on base vert.x
 
 ## Description of environment
 ### General
