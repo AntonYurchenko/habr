@@ -23,12 +23,12 @@ docker build -f Dockerfile -t http-kafka-endpoint:0.1 ./habr/http-kafka-endpoint
 
 ## Running of docker container as service
 ```bash
-docker run --restart always \
+docker run --name http-kafka-endpoint \
     -p 8080:8080 \
     -e APP_LOG_LEVEL=DEBUG \
     -e KAFKA_TOPIC=topic-name \
     -e KAFKA_BROKERS=kafka-host-name:9092 \
-    --name http-kafka-endpoint \
+    --restart=always \
     http-kafka-endpoint:0.1 
 ```
 
