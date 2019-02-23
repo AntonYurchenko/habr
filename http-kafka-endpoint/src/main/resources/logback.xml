@@ -1,0 +1,18 @@
+<configuration>
+    <appender name="FLATTEN_STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss} - %level - %logger{128}:%line - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.github.habr.endpoint" level="${APP_LOG_LEVEL:-INFO}" additivity="false">
+        <appender-ref ref="FLATTEN_STDOUT" />
+    </logger>
+
+    <root level="${ROOT_LOG_LEVEL:-INFO}">
+        <appender-ref ref="FLATTEN_STDOUT" />
+    </root>
+
+</configuration>
