@@ -18,7 +18,8 @@ Default values we can change into file `src/main/resources/logback.xml`
 ## Building of docker image
 ```bash
 git clone git@github.com:AntonYurchenko/habr.git habr
-docker build -f Dockerfile -t http-kafka-endpoint:0.1 ./habr/http-kafka-endpoint/
+cd habr/http-kafka-endpoint
+docker build -f Dockerfile -t http-kafka-endpoint:0.1 .
 ```
 
 ## Running of docker container as service
