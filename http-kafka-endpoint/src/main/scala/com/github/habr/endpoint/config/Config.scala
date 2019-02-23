@@ -26,8 +26,8 @@ object Config extends LazyLogging {
   lazy val kafkaPoolSize: Int = getInt("kafka.poolSize")
   lazy val kafkaConf: mutable.Map[String, String] = mutable.Map(
     "bootstrap.servers" -> getString("kafka.config.bootstrap.servers"),
-    "key.serializer" -> "kafka.config.key.serializer",
-    "value.serializer" -> "kafka.config.value.serializer"
+    "key.serializer" -> "org.apache.kafka.common.serialization.StringSerializer",
+    "value.serializer" -> "org.apache.kafka.common.serialization.StringSerializer"
   )
 
 
