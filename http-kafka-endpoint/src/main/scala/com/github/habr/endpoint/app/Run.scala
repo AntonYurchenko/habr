@@ -18,11 +18,11 @@ object Run extends App with LazyLogging {
 
   logger.info("Start application")
 
-  // Initialisation and print configuration
+  // initialisation and print configuration
   val vertx = Vertx.vertx()
   Config.printConfig()
 
-  // Deploy all verticals
+  // deploy all verticals
   vertx.deployVerticle(HttpConsumer.name, HttpConsumer.options)
   vertx.deployVerticle(KafkaSender.name, KafkaSender.options)
 
