@@ -10,8 +10,8 @@ docker run -it \
 ```
 The example shows how you can convert image `scala-smile-clustering/testImage.png` to `scala-smile-clustering/modifiedImage.png`
 
-[!testImage.png](scala-smile-clustering/testImage.png)
-testImage.png
+testImage.png:
+![testImage.png](https://github.com/AntonYurchenko/habr/blob/master/scala-smile-clustering/testImage.png)
 
-[!testImage.png](scala-smile-clustering/modifiedImage.png)
-modifiedImage.png
+modifiedImage.png:
+![modifiedImage.png](https://github.com/AntonYurchenko/habr/blob/master/scala-smile-clustering/modifiedImage.png)
