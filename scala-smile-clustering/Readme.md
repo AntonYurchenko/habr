@@ -8,3 +8,10 @@ docker run -it \
     -v /tmp/habr/scala-smile-clustering:/workspace/scala-smile-clustering \
     entony/jupyter-scala:1.4.1
 ```
+The example shows how you can convert image `scala-smile-clustering/testImage.png` to `scala-smile-clustering/modifiedImage.png`
+
+[!testImage.png](scala-smile-clustering/testImage.png)
+testImage.png
+
+[!testImage.png](scala-smile-clustering/modifiedImage.png)
+modifiedImage.png
